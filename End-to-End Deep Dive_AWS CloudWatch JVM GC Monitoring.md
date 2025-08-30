@@ -262,11 +262,7 @@ Action → SNS → PagerDuty/Slack → On-call escalation.
 ---
 
 
----
-
----
-
-# 📊 1. CloudWatch Dashboard JSON  → For JVM GC visualization.
+# 📊 12. CloudWatch Dashboard JSON  → For JVM GC visualization.
 
 Save as `jvm-gc-dashboard.json` and import into CloudWatch.
 
@@ -333,7 +329,7 @@ Save as `jvm-gc-dashboard.json` and import into CloudWatch.
 
 ---
 
-# 🔔 2. CloudWatch Alarm YAML  → Heap pressure, pause duration, GC storm alerts.
+# 🔔 13. CloudWatch Alarm YAML  → Heap pressure, pause duration, GC storm alerts.
 
 Save as `jvm-gc-alarms.yaml`. Deploy with `aws cloudwatch put-metric-alarm`.
 
@@ -393,7 +389,7 @@ Resources:
 
 ---
 
-# 📑 3. Logs Insights Queries (GC Logs) → To correlate GC log events.
+# 📑 14. Logs Insights Queries (GC Logs) → To correlate GC log events.
 
 Save queries in CloudWatch → Logs Insights → Saved Queries.
 
